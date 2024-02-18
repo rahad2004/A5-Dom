@@ -150,7 +150,9 @@
       <!-- best offer -->
 
       <div class="lg:mt-28 md:mt-28 mt-[-50px]">
-        <h1 class="raleway font-bold text-5xl text-center my-10">Best offers for you</h1>
+        <h1 class="raleway font-bold text-5xl text-center my-10">
+          Best offers for you
+        </h1>
         <div
           class="flex justify-around gap-6 flex-col md:flex-row lg: flex-row"
         >
@@ -198,15 +200,80 @@
           </div>
         </div>
         <!-- offer button -->
-        <div class=" flex items-center justify-center my-10">
-            <button class="btn text-[#1DD100] bg-[#ffff] border border-[#1DD10080] "> See All offer</button>
+        <div class="flex items-center justify-center my-10">
+          <button
+            class="btn text-[#1DD100] bg-[#ffff] border border-[#1DD10080]"
+          >
+            See All offer
+          </button>
         </div>
       </div>
     </section>
     <!-- program section -->
-    <section class="container mx-auto bg-[#F7F8F8] border-t-4 border-[#1DD100] min-h-16 rounded-t-full">
-        <h1>RR Enterprice</h1>
-
+    <section
+      class="bg-[#F7F8F8] border-t-4 border-[#1DD100] min-h-16 rounded-t-[50px]"
+    >
+      <!-- program section head -->
+      <div class="flex flex-col justify-center items-center my-10 gap-4 p-5">
+        <h1 class="raleway text-4xl font-bold">RR Enterprice</h1>
+        <p class="text-[#03071260] inter text-center">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+      <!-- bus info  -->
+      <div class="container mx-auto bg-[#ffff] flex justify-between flex-col lg:flex-row md:flex-row">
+        <div class="w-[70%]">
+          <div class="flex justify-between p-10">
+            <div class="flex items-center gap-3">
+              <div><img src="images/bus-logo.png" alt="" /></div>
+              <div>
+                <h2 class="raleway text-[32px] font-bold">RR Paribahan</h2>
+                <p class="text-[#03071260] inter">
+                  Coach-009-WEB ! AC_Business
+                </p>
+              </div>
+            </div>
+            <div class="bg-[#1DD10015] p-4 flex gap-2 rounded-xl w-[200px]">
+              <img src="images/seat-green-filled.png" alt="" />
+              <h4 class="text-[#1DD100] inter font-semibold">
+                <span>40</span>
+                <h4 class="text-[#1DD100] inter font-semibold">Seats left</h4>
+              </h4>
+            </div>
+          </div>
+          <div class="bg-[#F7F8F8] p-5 m-10 space-y-6">
+            <div class="flex justify-between">
+              <h1>Route</h1>
+              <h1>Dhaka - Sylhet</h1>
+            </div>
+            <div class="flex justify-between">
+              <h1>Departure Time</h1>
+              <h1>9:00 PM</h1>
+            </div>
+            <div class="flex justify-between flex-col md:flex-row lg:flex-row gap-5">
+              <div class="bg-[#03071260] p-4 rounded-lg ">
+                <h1>Boarding Point - Laxmipur</h1>
+              </div>
+              <div class="bg-[#03071260] p-4 rounded-lg">
+                <h1>Dropping Point - Bogura</h1>
+              </div>
+              <div class="bg-[#03071260] p-4 rounded-lg">
+                <h1>Est. Time - 11 Hour</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden  lg:flex md:hidden">
+          <img class="h-full" src="images/info-devider.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-center w-[30%]">
+          <h1><img src="images/fare.png" alt="" /></h1>
+          <h1>550 Taka</h1>
+          <h4>Per Seat</h4>
+        </div>
+        
+      </div>
     </section>
   </body>
   <script src="code.js/code.js"></script>
