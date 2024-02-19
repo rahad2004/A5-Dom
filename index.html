@@ -307,35 +307,35 @@
           <div class="flex gap-10 space-x-14 justify-between">
             <div class="grid grid-cols-3 gap-10">
               <p class="p-4">A</p>
-              <button class="btn   button">A1</button>
-              <button class="btn  button">A2</button>
+              <button class="btn button">A1</button>
+              <button class="btn button">A2</button>
               <p class="p-4">B</p>
-              <button class="btn  button">B1</button>
-              <button class="btn  button">B2</button>
+              <button class="btn button">B1</button>
+              <button class="btn button">B2</button>
               <p class="p-4">C</p>
-              <button class="btn  button">C1</button>
-              <button class="btn  button">C2</button>
+              <button class="btn button">C1</button>
+              <button class="btn button">C2</button>
               <p class="p-4">D</p>
-              <button class="btn  button">D1</button>
+              <button class="btn button">D1</button>
               <button class="btn button">D2</button>
               <p class="p-4">E</p>
               <button class="btn button">E1</button>
-              <button class="btn  button">E2</button>
+              <button class="btn button">E2</button>
               <p class="p-4">F</p>
-              <button class="btn  button">F1</button>
+              <button class="btn button">F1</button>
               <button class="btn button">F2</button>
               <p class="p-4">G</p>
               <button class="btn button">G1</button>
               <button class="btn button">G2</button>
               <p class="p-4">H</p>
               <button class="btn button">H1</button>
-              <button class="btn  button">H2</button>
+              <button class="btn button">H2</button>
               <p class="p-4">I</p>
-              <button class="btn  button">I1</button>
-              <button class="btn  button">I2</button>
+              <button class="btn button">I1</button>
+              <button class="btn button">I2</button>
               <p class="p-4">J</p>
-              <button class="btn  button">J1</button>
-              <button class="btn  button">J2</button>
+              <button class="btn button">J1</button>
+              <button class="btn button">J2</button>
             </div>
             <div class="grid grid-cols-2 gap-10">
               <button class="btn button">A3</button>
@@ -365,7 +365,7 @@
           <h1>Select Your Seat</h1>
 
           <!-- table -->
-          <div class="bg-[#F7F8F8] w-full w-[100%] p-6 rounded-3xl">
+          <div class="bg-[#F7F8F8] w-full  p-6 rounded-3xl">
             <div class="overflow-x-auto">
               <table class="table">
                 <!-- head -->
@@ -373,8 +373,10 @@
                   <tr>
                     <th>
                       Seat
-                      <span class="bg-[#1DD100] p-2 rounded-3xl text-white"
-                        id="booking-seat" >0</span
+                      <span
+                        class="bg-[#1DD100] p-2 rounded-3xl text-white"
+                        id="booking-seat"
+                        >0</span
                       >
                     </th>
                     <th>Class</th>
@@ -382,7 +384,7 @@
                   </tr>
                 </thead>
                 <tbody id="details"></tbody>
-                <tbody class="border border-t-4">
+                <tbody class="border border-t-4" id="disound-add-box">
                   <tr>
                     <th>Total Price</th>
                     <th></th>
@@ -390,23 +392,28 @@
                   </tr>
                 </tbody>
               </table>
-              <div class="bg-white flex p-2 my-2 rounded-2xl">
+              <div class="bg-white flex p-2 my-2 rounded-2xl" id="coupon-box">
                 <input
+                  id="coupon"
                   class="w-full border-none px-3"
                   type="text"
                   placeholder="Have any copupon?"
                 />
-                <button class="btn bg-[#1DD100]">Apply</button>
+                <button disabled id="apply-btn" class="btn bg-[#1DD100]">
+                  Apply
+                </button>
               </div>
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th>Grand Total</th>
-                    <th></th>
-                    <th>BDT <span id="G-Total">0</span></th>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="overflow-x-auto w-full ">
+                <table class="table ">
+                  <tbody>
+                    <tr>
+                      <th>Grand Total</th>
+                      <th></th>
+                      <th>BDT <span id="G-Total">0</span></th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           <div class="my-5 space-y-4">
