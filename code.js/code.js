@@ -1,5 +1,9 @@
 let seat = 40;
 let booking = 0
+function goToTicketSection(){
+    location.href="#go-to-seat"
+
+}
 const buttons = document.querySelectorAll('.button')
 for (let button of buttons)
 
@@ -87,9 +91,9 @@ btn.addEventListener('click', function () {
             const td = document.createElement('th')
             const td1 = document.createElement('th')
             const td2 = document.createElement('th')
-            td.innerText="Discount";
-            td1.innerText="";
-            td2.innerText="BDT "+ discount;
+            td.innerText = "Discount";
+            td1.innerText = "";
+            td2.innerText = "BDT " + discount;
             tr.appendChild(td);
             tr.appendChild(td1);
             tr.appendChild(td2);
@@ -104,9 +108,9 @@ btn.addEventListener('click', function () {
             const td = document.createElement('th')
             const td1 = document.createElement('th')
             const td2 = document.createElement('th')
-            td.innerText="Discount";
-            td1.innerText="";
-            td2.innerText="BDT "+ discount;
+            td.innerText = "Discount";
+            td1.innerText = "";
+            td2.innerText = "BDT " + discount;
             tr.appendChild(td);
             tr.appendChild(td1);
             tr.appendChild(td2);
@@ -124,4 +128,25 @@ btn.addEventListener('click', function () {
     }
 
 
+})
+const phoneNumber = document.getElementById('PhoneNumber');
+phoneNumber.addEventListener("keyup", function (event) {
+    const booking = document.getElementById('booking-seat').innerText;
+    const nextbutton = document.getElementById("next-btn");
+
+
+    const Number = event.target.value;
+
+    if (parseInt(Number) > 0 && parseInt(booking) > 0) {
+
+        nextbutton.removeAttribute('disabled')
+    }
+    else {
+        nextbutton.setAttribute('disabled')
+    }
+
+})
+
+document.getElementById('reload').addEventListener('click',function(){
+    location.reload();
 })
